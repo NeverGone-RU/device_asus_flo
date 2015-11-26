@@ -48,11 +48,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-        LiveWallpapersPicker \
-        librs_jni
-
 PRODUCT_COPY_FILES += \
 	device/asus/flo/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	device/asus/flo/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
@@ -156,10 +151,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
-PRODUCT_PACKAGES += \
-	librs_jni \
-	com.android.future.usb.accessory
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
 	e2fsck
@@ -185,6 +176,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors
+
 PRODUCT_COPY_FILES += \
     device/asus/flo/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
@@ -194,9 +186,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
 	hci_qcomm_init
-
-PRODUCT_PACKAGES += \
-	power.msm8960
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/init.flo.bt.sh:system/bin/init.flo.bt.sh
